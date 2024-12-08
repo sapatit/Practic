@@ -98,7 +98,7 @@ def example_usage():
     partial_multiply = partial(multiply, y=2)
 
     # Применяем функции к списку чисел
-    results = apply_all_func([6, 20, 15, 9], max, min, sum, sorted, lambda nums: [partial_multiply(n) for n in nums],
+    results = apply_all_func([6, 20, 15, 9], len, max, min, sum, sorted, lambda nums: [partial_multiply(n) for n in nums],
                              ignore_errors=True)
 
     for res in results:
