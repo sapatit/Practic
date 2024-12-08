@@ -21,7 +21,7 @@ from apply_functions_to_numbers import apply_all_func
 
 def example_usage():
     # Применяем функции к списку чисел
-    results = apply_all_func([6, 20, 15, 9], max, min, sum, sorted)
+    results = apply_all_func([6, 20, 15, 9], len, max, min, sum, sorted)
 
     for res in results:
         print(f"{res.name}: {res.result}")
@@ -48,7 +48,7 @@ def multiply(x: int, y: int) -> int:
     return x * y
 
 # Применяем функции к списку чисел
-results = apply_all_func([1, 2, 3, 4], max, min, sum, sorted)
+results = apply_all_func([1, 2, 3, 4], len, max, min, sum, sorted)
 
 for res in results:
     print(f"{res.name}: {res.result}")
