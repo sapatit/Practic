@@ -25,6 +25,7 @@ project/
 │
 └── tests/               # Директория с тестами
     └── test_word_writer.py
+
 ```
 
 ## Установка
